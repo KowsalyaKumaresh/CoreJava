@@ -1,0 +1,35 @@
+package com.chainsys.unittest;
+
+import com.chainsys.variables.Demo;
+
+/**
+ * tester class for global variables
+ * @author kows3140
+ * @category to test demo class, its fields and methods
+ * date: march 24 2022
+ * 
+ *  */
+
+public class variablesTester {
+	/** test static, constant,immutable variable **/
+	
+	
+	public static void testGlobalVariable() {
+		System.out.println("DataA:"+ Demo.DataA);
+		
+		/* display the value of immutable field
+		 this is not possible without an object
+		System.out.println("DataB: " +Demo.DataB;
+		 display the value of constant field*/
+		System.out.println("DataC:"+ Demo.DataC);
+		
+		// modifying value of the static field DataA
+		Demo.DataA=2345;
+		System.out.println("DataA: "+ Demo.DataA);
+		/* modifying value of the static dield DataC
+		 * Error: </b> The final field Demo.DataC cannot be assigned
+		 */
+	
+	}
+
+}

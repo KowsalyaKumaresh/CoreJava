@@ -1,0 +1,27 @@
+package com.chainsys.variables;
+
+public class Demo {
+	public static int DataA;
+	public final int DataB; // immutable
+	public static final int DataC=300; //constant
+	
+	//constructor
+	public Demo(int dataB) {
+		this.DataB=dataB;
+	}
+	/**
+	 * static method can be called without an object
+	 */
+	public static void sayhello() {
+		System.out.println("Hello developers !!");
+	}
+	/**
+	 * greetuser is a non static methode
+	 */
+	public void greetuser() {
+		System.out.println("Greeting user");
+	}
+	
+	}
+
+

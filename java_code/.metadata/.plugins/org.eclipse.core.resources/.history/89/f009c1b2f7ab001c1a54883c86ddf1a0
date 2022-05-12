@@ -1,0 +1,32 @@
+package com.chainsys.unittest;
+import com.chainsys.variables.Calculator;
+
+public class CalculatorTester {
+	
+	public static int add() {
+		System.out.println(Calculator.add(34, 45));
+	
+		
+		return 0 ;
+	}
+	public static int multiply() {
+		System.out.println(Calculator.multiply(34, 45));
+	
+		
+		return 0 ;
+	}
+	public static int subtract() {
+		System.out.println(Calculator.add(34, 45));
+	
+		
+		return 0 ;
+	}
+	public static int divide() {
+		System.out.println(Calculator.divide(34, 0));
+	
+		
+		return 0 ;
+	}
+	
+
+}

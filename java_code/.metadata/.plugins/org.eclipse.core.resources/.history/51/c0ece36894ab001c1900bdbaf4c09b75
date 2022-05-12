@@ -1,0 +1,13 @@
+package com.chainsys.variables;
+
+public class Startup {
+
+	public static void main(String[] args) {
+		
+		variablesTester.testGlobalVariable();
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

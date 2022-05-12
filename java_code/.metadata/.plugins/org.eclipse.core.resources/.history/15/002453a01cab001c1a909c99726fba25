@@ -1,0 +1,15 @@
+package com.chainsys.introduction;
+
+public class Fifth {
+	public static void main(String[]args) {
+		int x=1;
+		System.out.println(x);
+		System.out.println(x++);
+		int count;
+		for(count=0;count<100;count++) {
+			System.out.print(count + " ");
+			
+		}
+	}
+
+}

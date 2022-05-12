@@ -1,0 +1,15 @@
+package com.chainsys.practise;
+
+public class ExceptionHandling {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a=5,b=0;
+		int c;
+		c=a/b;
+	System.out.println(c);
+	System.out.println("End of the program");
+
+	}
+
+}

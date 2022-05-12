@@ -1,0 +1,15 @@
+package com.chainsys.introduction;
+
+public class Third {
+
+	public static void main(String[] args) {
+		char c1= 'A';
+		int ascivalueofc1=(int)c1;
+		
+		
+		System.out.println(ascivalueofc1);
+		// TODO Auto-generated method stub
+
+	}
+
+}

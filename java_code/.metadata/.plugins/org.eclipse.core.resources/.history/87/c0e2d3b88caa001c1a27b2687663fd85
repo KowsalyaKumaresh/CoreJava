@@ -1,0 +1,22 @@
+package com.chainsys.introduction;
+
+public class Third {
+
+	public static void main(String[] args) {
+		byte bytemaxvalue=127;
+		byte byteminvaue=-128;
+		System.out.println("max="+bytemaxvalue);
+		System.out.println("min="+byteminvaue);
+		
+		
+		
+		char c1= 'A';
+		int ascivalueofc1=(int)c1;
+		
+		
+		System.out.println(ascivalueofc1);
+		// TODO Auto-generated method stub
+
+	}
+
+}

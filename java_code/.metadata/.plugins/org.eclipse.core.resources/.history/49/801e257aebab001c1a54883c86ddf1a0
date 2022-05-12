@@ -1,0 +1,25 @@
+package com.chainsys.entrypoint;
+
+import com.chainsys.unittest.variablesTester;
+
+/** @author kows3140 
+ * @version1.0
+ * date:Mar 24 2022
+ * @category:classroom 
+ * @return void
+ * 
+ */
+
+public class Startup {
+
+	public static void main(String[] args) {
+		
+		//variablesTester.testGlobalVariable();
+		//variablesTester. teststaticMethod();
+		variablesTester.testNonstaticMethod()
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

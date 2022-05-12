@@ -1,0 +1,30 @@
+package com.chainsys.introduction;
+import java.util.*;
+
+public class Fourth {
+
+	public static void main(String[]args) {
+		taskA();
+		taskB();
+		
+		
+	}
+	public static void taskA() {
+		System.out.println("Enter your name");
+		Scanner sc=new 	Scanner(System.in);
+		String name=sc.next();
+		sc.close();
+		System.out.println(name);
+		
+	}
+	public static void taskB() {
+		System.out.println("Enter number");
+		Scanner sc=new 	Scanner(System.in);
+		int firstvalue=sc.nextInt();
+		int result=firstvalue*100;
+		sc.close();
+		System.out.println(result);
+
+	
+
+}}

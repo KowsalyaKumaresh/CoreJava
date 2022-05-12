@@ -1,0 +1,20 @@
+package dataBaseConnectivity;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ExecuteUpdata {
+
+	public static void main(String[] args) throws SQLException {
+		// TODO Auto-generated method stub
+              Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "oracle");
+	           Statement state =con.createStatement();
+	           state.executeUpdate("insert into filetable values(34,'kowsi')");
+	           state.executeUpdate("delete from filetable where id=34");
+	
+	
+	}
+
+}

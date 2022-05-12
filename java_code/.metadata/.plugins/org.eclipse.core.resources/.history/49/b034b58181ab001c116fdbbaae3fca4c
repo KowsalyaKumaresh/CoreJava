@@ -1,0 +1,22 @@
+package com.chainsys.variables;
+
+public class variablesTester {
+	
+	public static void testGlobalVariablDe() {
+		System.out.println("DataA:"+ Demo.DataA);
+		System.out.println("DataB" + demo.DataB);
+		/* display the value of immutable field
+		 this is not possible without an object
+		System.out.println("DataB: " +Demo.DataB;
+		 display the value of constant field*/
+		System.out.println("DataC:"+ Demo.DataC);
+		// modifying value of the static field DataA
+		
+		Demo.DataA=2345;
+		System.out.println("DataA: "+ Demo.DataA);
+		/* modifying value of the static dield DataC
+		 * Error: </b> The final field Demo.DataC cannot be assigned
+		 */
+	}
+
+}

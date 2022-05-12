@@ -1,0 +1,38 @@
+package com.chainsys.introduction;
+
+public class diamond {
+
+	public static void main(String[] args) {
+		int countA = 0;
+		for (countA = 1; countA <= 5; countA++) {
+			for(int count1=4; count1>0; count1-- ) {
+				System.out.print(" ");
+			}
+			
+			for (int countC = 1; countC <= countA; countC++) {
+				System.out.print(countC);
+			}
+
+			for (int countB = 1; countB < countA; countB++) {
+				System.out.print("");
+			}
+			System.out.println();
+		}
+
+		for (countA = 1; countA <= 5; countA++) {
+			for(int count1=4; count1>0; count1-- ) {
+				System.out.print(" ");
+			}
+			
+			for (int countC = 1; countC<=(5-countA); countC++) {
+				System.out.print(countC);
+			}
+
+			for (int countB = 1; countB < countA; countB++) {
+				System.out.print("");
+			}
+
+			System.out.println();
+		}
+	}
+}

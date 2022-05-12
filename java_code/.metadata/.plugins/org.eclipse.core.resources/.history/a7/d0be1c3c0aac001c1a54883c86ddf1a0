@@ -1,0 +1,24 @@
+package com.chainsys.unittest;
+
+import com.chainsys.variables.Bank;
+
+public class BankTester {
+	public static void deposit() {
+	
+		int arg1=1000;
+		int output=Bank.deposit(arg1);
+		System.out.println("The deposit amount  is: " + output);
+	}
+	public static void withdraw() {
+		int arg1=500;
+		int output=Bank.deposit(arg1);
+		
+		System.out.println("The withdraw amount is: " + output);
+	}
+	
+	public static void openAccount() {
+		Bank.openAccount("kowsi",12798798L);
+		
+	}}
+	
+

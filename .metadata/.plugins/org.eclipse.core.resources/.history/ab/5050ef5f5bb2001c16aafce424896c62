@@ -1,0 +1,46 @@
+package com.chainsys.entrypoint;
+
+import com.chainsys.arrays.ArraySolutions;
+import com.chainsys.arrays.EmpArrayDemo;
+import com.chainsys.arrays.TwoDimArray;
+import com.chainsys.strings.StringBuilderDemo;
+import com.chainsys.strings.StringLessonA;
+import com.chainsys.unittest.EmployeeTester;
+//import com.chainsys.unittest.BankTester;
+//import com.chainsys.unittest.CalculatorTester;
+//import com.chainsys.unittest.CarTester;
+import com.chainsys.unittest.MovieTester;
+
+/** @author kows3140 
+ * @version1.0
+ * date:Mar 24 2022
+ * @category:classroom 
+ * @return void
+ * 
+ */
+
+public class Startup {
+
+	public static void main(String[] args) {
+		//float[]nums= {1.3f,2.4f,3.5f,12.8f};	
+		//ArraySolutions.findTheLargestNumberinArray(nums);
+		//ArraySolutions.findSumAndAverageOfaFloatArray(nums);
+		//ArraySolutions.bubblesort();	
+		//EmpArrayDemo.createArrayofEmployee();
+		TwoDimArray.calculateTotalandAverage();
+		
+		/*Object firstObject=new Object();
+		Object secondObject=new Object();
+		secondObject=firstObject;
+		int a;
+		int i=2;
+		a=i;
+		System.out.println(a==i));
+		System.out.println(firstObject.toString());
+		System.out.println(firstObject.hashCode());	
+		System.out.println(firstObject.equals(secondObject));
+		System.out.println(firstObject.getClass());*/
+		
+	}
+
+}

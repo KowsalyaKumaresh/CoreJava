@@ -1,0 +1,23 @@
+package com.chainsys.variables;
+
+public class Bank {
+	
+	
+	
+	public static int deposit(int amount) {
+	
+		return amount;
+	}
+	public static int withdraw(int amount) {
+		
+		return amount;
+	}
+	public static void openAccount(String name,long accountNumber) {
+		System.out.println("Account HolderName "+name +"Account Number "+accountNumber);
+	
+		
+		
+		
+	}
+
+}

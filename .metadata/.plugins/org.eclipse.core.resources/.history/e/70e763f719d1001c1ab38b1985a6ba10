@@ -1,0 +1,8 @@
+package com.chainsys.defaults;
+
+
+
+
+  class ClassA{  
+  void msg(){System.out.println("Hello");}  
+}

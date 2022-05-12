@@ -1,0 +1,18 @@
+package dataBaseConnectivity;
+
+import java.io.ByteArrayOutputStream;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import javax.imageio.ImageIO;
+
+
+public class ImageToByteArrayConversion {
+	
+      public static void main(String args[]) throws Exception{
+    
+	  BufferedImage bImage = ImageIO.read(new File("d://kowsi.jpg"));
+      ByteArrayOutputStream bos = new ByteArrayOutputStream();
+      ImageIO.write(bImage, "jpg", bos );
+      byte [] data = bos.toByteArray();
+   }
+}

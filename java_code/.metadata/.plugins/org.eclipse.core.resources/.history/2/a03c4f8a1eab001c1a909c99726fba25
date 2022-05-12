@@ -1,0 +1,31 @@
+package com.chainsys.introduction;
+
+public class Fifth {
+	public static void main(String[]args) {
+		//printNumbrOnetoHundered();
+		 printnotentoone();
+		}
+	
+	
+	public static void printNumbrOnetoHundered(){
+	
+	
+		int x=1;
+		System.out.println(x);
+		System.out.println(++x);
+		System.out.println(--x);
+		int count;
+		for(count=0;count<100;count++) {
+			System.out.print(count + " ");
+			
+		}
+	}
+public static void printnotentoone() {
+	int count;
+	for(count=10;count>0;count--) {
+		System.out.println(count+" ");
+	}
+}
+}
+
+
