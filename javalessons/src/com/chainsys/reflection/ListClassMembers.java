@@ -6,21 +6,29 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Parameter;
+import java.util.Iterator;
 import java.util.Scanner;
+
+
 
 public class ListClassMembers {
 
 	public static void main(String args[]) {
-		// testA();
-		// lateBinding();
+		//testA();
+	    lateBinding();
 		//queryTypeInfo();
-		testsetAccessible();
-		printClassInfo(args);
+		//testsetAccessible();
+		testB();
+		
+		
+
 
 	}
 
 	public static void printClassInfo(Object ob) {
+		//System.out.println(ob);
 		Class<?> classreflected = ob.getClass();
+		System.out.println(classreflected);
 		System.out.println(classreflected.getName());
 		System.out.println("Constructors:");
 		Constructor<?> constructorlist[] = classreflected.getConstructors();
@@ -30,11 +38,11 @@ public class ListClassMembers {
 		//
 		System.out.println("Methods:");
 		Method methodlist[] = classreflected.getMethods();
-		// for(int i = 0; i < m
+		System.out.println(methodlist.length);
 		for (int i = 0; i < methodlist.length; i++) {
 			methodlist[i].setAccessible(true);
-			System.out.println("\t Method Name: " + methodlist[i].getName() + " ParameterCount "
-					+ methodlist[i].getParameterCount() + " returnType " + methodlist[i].getReturnType());
+			System.out.println("\t Method Name: " + methodlist[i].getName() + " ParameterCount: "
+					+ methodlist[i].getParameterCount() + " returnType: " + methodlist[i].getReturnType());
 		}
 	}
 
@@ -43,12 +51,13 @@ public class ListClassMembers {
 		// Class<?> stringclass=s1.getClass();
 		printClassInfo(s1);
 		Integer x = 2000;
-		// Class<?> intClass=x.getClass();
+		//Class<?> intClass=x.getClass();
+		
 		printClassInfo(x);
 		Emp firstEmp = new Emp();
 		// Class<?> empClass=firstEmp.getClass();
 		printClassInfo(firstEmp);
-		Actor hero = new Actor();
+		Actor hero=new Actor();
 		printClassInfo(hero);
 	}
 
@@ -57,16 +66,20 @@ public class ListClassMembers {
 		String classname = "com.chainsys.reflection.Actor";
 		Class<?> classReference;
 		try {
-			classReference = Class.forName(classname); // Actor actorclass=null;
+			classReference = Class.forName(classname);             
+			
 			//fetch an array of references to each constructor in the class
 			Constructor<?> clist[]=classReference.getConstructors();
+			 for(Constructor con:clist)
+				 System.out.println(con);
+			
 			// newInstance is a method that create an instance(object) of the calss
 			// using the  constructor reference
-			
 			Object first_obj =clist[0].newInstance();  // first_obj=new Actor()
 		
 		   // fetch reference to the default constructor of the class
-		   Constructor<?> defaultConstructor=classReference.getDeclaredConstructor();
+		   Constructor<?> defaultConstructor=classReference.getDeclaredConstructor(); // it return a default constructor.
+		   System.out.println(defaultConstructor);
 		   Object obj=defaultConstructor.newInstance();
 		
 		} catch (ClassNotFoundException e1) {
@@ -108,18 +121,24 @@ public class ListClassMembers {
 			System.out.println("Enter Class Name");
 
 			/**
-			 * java.lang.String java.lang.Integer java.util.Array java.util.List
-			 * com.chainsys.reflection.Actor com.chainsys.reflection.Emp
+			 * java.lang.String 
+			 * java.lang.Integer 
+			 * java.util.Array
+			 *  java.util.List
+			 * com.chainsys.reflection.Actor
+			 *  com.chainsys.reflection.Emp
 			 */
 			String className = sc.nextLine();
 			// load the class -- A a1;
 			Class<?> classReference = Class.forName(className);
 			// create Object a1=new A();
 			Object obj = classReference.getDeclaredConstructor().newInstance();
+			System.out.println(obj);
 			System.out.println("Class Name " + obj.getClass().getName());
 			System.out.println("Hash Code " + obj.hashCode());
 			System.out.println("parent class" + classReference.getSuperclass().getName());
 			int mod = classReference.getModifiers(); // about the access Modifier.
+			System.out.println(mod);
 			System.out.println("IsPublic " + Modifier.isPublic(mod));
 			System.out.println("isPrivate " + Modifier.isPrivate(mod));
 			System.out.println("isAbstract " + Modifier.isAbstract(mod));

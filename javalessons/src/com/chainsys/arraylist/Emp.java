@@ -7,16 +7,16 @@ public class Emp implements Serializable {
 	
 	
 	private final int id;
-	public String sName;
-	public Emp(int v1, String s) {
+	public String Name;
+	public Emp(int v1) {
 		id=v1;
-		sName=s;
+	//	sName=s;
 	}
 	public int getId() {
 		return id;
 	}
 	public String getName() {
-		return sName;
+		return Name;
 	}
 	
 	@Override

@@ -6,10 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="request.getParameter"/>
 		<list key="findhistory">
+			<item value="sc.nextLine();"/>
 			<item value="h"/>
 		</list>
 		<list key="replacehistory">
+			<item value="request.getParameter"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

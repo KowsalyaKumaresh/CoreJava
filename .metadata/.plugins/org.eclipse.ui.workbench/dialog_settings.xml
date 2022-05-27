@@ -16,12 +16,13 @@
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textEntries">
-			<item value="1"/>
+			<item value="2"/>
 			<item value="1"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
 			<item value="server"/>
+			<item value="ser"/>
 			<item value="console"/>
 			<item value="proj"/>
 		</list>
@@ -29,7 +30,7 @@
 	<section name="ImportExportAction">
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.ui.Basic"/>
 			<item value="org.eclipse.datatools.connectivity"/>
@@ -46,7 +47,8 @@
 			<item value="org.eclipse.pde.PDE"/>
 			<item value="org.eclipse.wst.web.ui"/>
 			<item value="org.eclipse.jst.ws.ui.new"/>
-			<item value="org.eclipse.ui.Examples"/>
 		</list>
+	</section>
+	<section name="FileSystemImportWizard">
 	</section>
 </section>

@@ -1,5 +1,7 @@
-.metadata
-bin/temp/
+.metadata/
+bin/
+tmp/
+temp/
 *.tmp
 *.bak
 *.swp

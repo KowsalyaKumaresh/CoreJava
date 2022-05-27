@@ -1,10 +1,7 @@
 package com.chainsys.reflection;
 
 
-	
-
-
- public class Actor {
+public class Actor {
                 
 	
 		public  String Name;
@@ -29,7 +26,7 @@ package com.chainsys.reflection;
 		 System.out.println("\t getName "+Name);
 		 return x+y+z;
 	  }
-	  protected void printCity()
+	  protected  void printCity()
 	  {
 		 System.out.println(" printCity "+city);
 	  }

@@ -12,7 +12,7 @@ public class Worker {
 			for (int i = 0; i < 5; i++) {
 				amount += i;
 				System.out.println(currentthreadid + "  " + amount);
-				//Thread.sleep(1000);
+				Thread.sleep(1000);
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
